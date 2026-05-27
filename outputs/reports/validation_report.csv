@@ -1,0 +1,5 @@
+Metric,Value,Target,Status
+AUC,0.7011,>0.70,Pass
+Gini,0.4022,>0.40,Pass
+KS,0.2928,>0.30,Fail
+PSI,0.0018,<0.10,Pass
