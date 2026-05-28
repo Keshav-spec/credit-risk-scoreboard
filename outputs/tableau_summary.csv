@@ -1,0 +1,4 @@
+score_band,total_loans,default_rate,avg_score,avg_loan_amnt
+High Risk,9916,7.03,438.4,14803.0
+Medium Risk,1701,2.41,511.8,14767.0
+Very High Risk,14163,18.89,357.4,15736.0
