@@ -5,7 +5,7 @@ An end-to-end bank-grade credit risk modelling and monitoring system built on th
 The project delivers a calibrated credit scorecard on a 300–850 scale, SQL-based portfolio analysis, an interactive Tableau dashboard, and a Streamlit monitoring platform with drift detection and approval strategy simulation.
 
 **Live Dashboard (Tableau):** [Credit-Risk-Score](https://public.tableau.com/views/CreditRiskScore/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
-**Live App (Streamlit):** [credit-risk-scoreboard.streamlit.app](https://credit-risk-scoreboard.streamlit.app/) 
+**Live App (Streamlit):** [credit-risk-scoreboard.streamlit.app](https://credit-risk-scoreboard.streamlit.app/)      
 **Dataset:** LendingClub Accepted Loans 2007–2018 Q4 via Kaggle (CC0 Public Domain)  
 **Author:** Keshav Sharma — CSE with Data Science
 
