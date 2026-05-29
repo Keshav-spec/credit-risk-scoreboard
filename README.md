@@ -30,6 +30,9 @@ The project delivers a calibrated credit scorecard on a 300–850 scale, SQL-bas
 **Screenshot 4 — Risk Explorer**
 <img width="1632" height="506" alt="image" src="https://github.com/user-attachments/assets/9857b97d-e8da-4480-b5a4-fb90787f73d0" />
 
+**Screenshot 5 — Tableau Dashboard**  
+<img width="650" height="867" alt="image" src="https://github.com/user-attachments/assets/feae169c-3e87-4207-9729-4a2fe06f694d" />
+
 ---
 
 ## Project Overview
