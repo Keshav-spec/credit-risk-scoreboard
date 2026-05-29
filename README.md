@@ -13,17 +13,22 @@ The project delivers a calibrated credit scorecard on a 300–850 scale, SQL-bas
 
 ## Dashboard Preview
 
-**Screenshot 1 — Tableau: Score distribution and default rate by band**
+**Screenshot 1 — Dashboard**
 
-![Tableau Dashboard](screenshots/tableau_dashboard.png)
+<img width="1917" height="874" alt="image" src="https://github.com/user-attachments/assets/f94ca6d6-8b0c-46cc-9c87-effc6515cf12" />
 
-**Screenshot 2 — Streamlit: Model monitoring with PSI alerts**
 
-![Streamlit Monitoring Dashboard](screenshots/streamlit_monitoring.png)
+**Screenshot 2 — Model monitoring with PSI alerts**
 
-**Screenshot 3 — Validation: ROC curve and KS chart**
+<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/d77786a6-f6cb-417f-b449-47264ec0f5bb" />
 
-![Validation Charts](screenshots/roc_ks_chart.png)
+
+**Screenshot 3 — Portfolio analysis**
+
+<img width="1909" height="827" alt="image" src="https://github.com/user-attachments/assets/ecf37f50-3224-462b-8e79-6a0ca43a7e91" />
+
+**Screenshot 4 — Risk Explorer**
+<img width="1632" height="506" alt="image" src="https://github.com/user-attachments/assets/9857b97d-e8da-4480-b5a4-fb90787f73d0" />
 
 ---
 
