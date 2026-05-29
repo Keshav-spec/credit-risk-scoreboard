@@ -4,8 +4,8 @@ An end-to-end bank-grade credit risk modelling and monitoring system built on th
 
 The project delivers a calibrated credit scorecard on a 300–850 scale, SQL-based portfolio analysis, an interactive Tableau dashboard, and a Streamlit monitoring platform with drift detection and approval strategy simulation.
 
-**Live Dashboard (Tableau):** [public.tableau.com/your-link](https://public.tableau.com) — replace with your link  
-**Live App (Streamlit):** [your-app.streamlit.app](https://your-app.streamlit.app) — replace with your link  
+**Live Dashboard (Tableau):** [Credit-Risk-Score](https://public.tableau.com/views/CreditRiskScore/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+**Live App (Streamlit):** [credit-risk-scoreboard.streamlit.app](https://credit-risk-scoreboard.streamlit.app/) 
 **Dataset:** LendingClub Accepted Loans 2007–2018 Q4 via Kaggle (CC0 Public Domain)  
 **Author:** Keshav Sharma — CSE with Data Science
 
@@ -410,13 +410,13 @@ This simulates the model governance workflows used by risk teams at banks and le
 ## Author
 
 **Keshav Sharma** — CSE with Data Science  
-GitHub: [github.com/yourusername](https://github.com/Keshav-spec)  
-LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/keshav-sharma-0396b1287/)
+GitHub: [github.com/Keshav-spec](https://github.com/Keshav-spec)  
+LinkedIn: [linkedin.com/in/keshav-sharma](https://www.linkedin.com/in/keshav-sharma-0396b1287/)
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License].
 
 The LendingClub dataset is released under the CC0 Public Domain licence. This project is intended for educational and portfolio purposes only and does not constitute financial advice.
