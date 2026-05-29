@@ -10,16 +10,16 @@ from sklearn.metrics import (
     roc_curve
 )
 
-# =====================================================
+ 
 # CREATE FOLDERS
-# =====================================================
+ 
 
 os.makedirs("outputs/plots", exist_ok=True)
 os.makedirs("outputs/reports", exist_ok=True)
 
-# =====================================================
+ 
 # LOAD DATA
-# =====================================================
+ 
 
 print("=" * 60)
 print("LOADING MODEL AND DATA")
@@ -38,9 +38,9 @@ woe_cols = [
 
 print(f"WoE Features: {len(woe_cols)}")
 
-# =====================================================
+ 
 # PREDICT PROBABILITIES
-# =====================================================
+ 
 
 print("\nGenerating predictions...")
 
@@ -50,9 +50,9 @@ y_prob = model.predict_proba(
     test_woe[woe_cols]
 )[:, 1]
 
-# =====================================================
+ 
 # GINI
-# =====================================================
+ 
 
 auc = roc_auc_score(y_true, y_prob)
 
@@ -65,9 +65,9 @@ print("=" * 60)
 print(f"AUC:  {auc:.4f}")
 print(f"Gini: {gini:.4f}")
 
-# =====================================================
+ 
 # KS STATISTIC
-# =====================================================
+ 
 
 fpr, tpr, thresholds = roc_curve(
     y_true,
@@ -78,9 +78,9 @@ ks = np.max(tpr - fpr)
 
 print(f"KS:   {ks:.4f}")
 
-# =====================================================
+ 
 # ROC + KS PLOT
-# =====================================================
+ 
 
 fig, (ax1, ax2) = plt.subplots(
     1,
@@ -147,9 +147,9 @@ plt.close()
 
 print("\nROC + KS plot saved.")
 
-# =====================================================
+ 
 # PSI FUNCTION
-# =====================================================
+ 
 
 def psi(expected, actual, bins=10):
 
@@ -188,9 +188,9 @@ def psi(expected, actual, bins=10):
 
     return psi_value
 
-# =====================================================
+ 
 # PSI CALCULATION
-# =====================================================
+ 
 
 print("\nCalculating PSI...")
 
@@ -211,9 +211,9 @@ psi_value = psi(
 
 print(f"PSI:  {psi_value:.4f}")
 
-# =====================================================
+ 
 # PSI STATUS
-# =====================================================
+ 
 
 if psi_value < 0.1:
     psi_status = "STABLE"
@@ -226,9 +226,9 @@ else:
 
 print(f"Status: {psi_status}")
 
-# =====================================================
+ 
 # VALIDATION REPORT
-# =====================================================
+ 
 
 report = pd.DataFrame({
     "Metric": ["AUC", "Gini", "KS", "PSI"],

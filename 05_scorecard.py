@@ -5,15 +5,15 @@ import os
 
 from sklearn.model_selection import train_test_split
 
-# =====================================================
+ 
 # CREATE FOLDERS
-# =====================================================
+ 
 
 os.makedirs("outputs/reports", exist_ok=True)
 
-# =====================================================
+ 
 # LOAD MODEL + BINS
-# =====================================================
+ 
 
 print("=" * 60)
 print("LOADING MODEL AND WOE BINS")
@@ -25,9 +25,9 @@ with open("models/logistic_model.pkl", "rb") as f:
 with open("models/woe_bins.pkl", "rb") as f:
     bins = pickle.load(f)
 
-# =====================================================
+ 
 # EXTRACT ORIGINAL FEATURE NAMES
-# =====================================================
+ 
 
 xcolumns = [
     c.replace("_woe", "")
@@ -37,9 +37,9 @@ xcolumns = [
 print("\nFeatures used in scorecard:")
 print(xcolumns)
 
-# =====================================================
+ 
 # GENERATE SCORECARD
-# =====================================================
+ 
 
 print("\nGenerating scorecard...")
 
@@ -54,9 +54,9 @@ card = sc.scorecard(
 
 print("Scorecard generated successfully.")
 
-# =====================================================
+ 
 # SAVE SCORECARD TABLE
-# =====================================================
+ 
 
 scorecard_df = pd.concat(card.values())
 
@@ -69,9 +69,9 @@ print("\nScorecard table saved.")
 
 print(scorecard_df.head())
 
-# =====================================================
+ 
 # SCORE TEST DATA
-# =====================================================
+ 
 
 print("\nScoring test dataset...")
 
@@ -92,9 +92,9 @@ test_raw_split["credit_score"] = sc.scorecard_ply(
     print_step=0
 )["score"]
 
-# =====================================================
+ 
 # SAVE SCORED DATA
-# =====================================================
+ 
 
 test_raw_split.to_csv(
     "data/features/test_scored.csv",

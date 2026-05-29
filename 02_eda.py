@@ -13,9 +13,9 @@ df = pd.read_csv("data/processed/loans_clean.csv")
 # Style
 sns.set_style("whitegrid")
 
-# =====================================================
+ 
 # 1. Default Rate by Grade
-# =====================================================
+ 
 
 grade_default = (
     df.groupby("grade")["target"]
@@ -42,9 +42,9 @@ plt.savefig(
 
 plt.close()
 
-# =====================================================
+ 
 # 2. Loan Amount Distribution
-# =====================================================
+ 
 
 plt.figure(figsize=(10, 5))
 
@@ -66,9 +66,9 @@ plt.savefig(
 
 plt.close()
 
-# =====================================================
+ 
 # 3. FICO Score Distribution
-# =====================================================
+ 
 
 plt.figure(figsize=(8, 5))
 
@@ -88,9 +88,9 @@ plt.savefig(
 
 plt.close()
 
-# =====================================================
+ 
 # 4. Correlation Heatmap
-# =====================================================
+ 
 
 plt.figure(figsize=(12, 10))
 
